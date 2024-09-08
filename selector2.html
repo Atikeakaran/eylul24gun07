@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors 2</title>
+    <style>
+        .onemli{
+            border-left: 10px solid green;
+        }
+        /*bir sonrakini seçmek için + kullanılır.*/
+        .onemli+li{
+            border-left: 10px solid red;
+        }
+        /*class dan sonraki tüm li leri kapsar*/
+        .onemsiz~li{
+            border-left: 10px solid cyan;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Lorem, ipsum.</li>
+        <li>Rerum, tempora.</li>
+        <li class="onemli">Voluptatum, nulla?</li>
+        <li>Hic, obcaecati!</li>
+        <li>Eum, illum.</li>
+        <li class="onemsiz">Reiciendis, tempora.</li>
+        <li>Nihil, amet!</li>
+        <li>Placeat, id.</li>
+        <li>Amet, aliquam?</li>
+    </ul>
+</body>
+</html>
